@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Chat</title>
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <div class="sidebar">
+        <h3>Users</h3>
+        <ul>
+            <li>Public Chat</li>
+            <li>User 1</li>
+            <li>User 2</li>
+        </ul>
+    </div>
+
+    <div class="chat-main">
+
+        <div class="chat-header">
+            Mini Chat
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <div class="messages" id="messages"></div>
+
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Type message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
